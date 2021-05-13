@@ -14,13 +14,12 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .folha {
   margin: 15px auto;
   background-color: #e7e7e7;
-  max-width: 500;
-  max-height: 600px;
   width: 400px;
   height: 550px;
   box-shadow: 15px 15px #0e0e0e;
@@ -63,4 +62,30 @@ body {
   margin-top: 20px;
   font-size: small;
   font-weight: lighter;
+}
+
+@media screen and (max-width: 768px) {
+  .folha {
+    width: 270px;
+    height: 450px;
+  }
+  .endereço {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 13px;
+    text-align: start;
+  }
+
+  .texto {
+    width: 215px;
+  }
+
+  .texto p {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: -5px;
+    font-weight: lighter;
+    font-size: 12px;
+    text-align: justify;
+  }
 }
